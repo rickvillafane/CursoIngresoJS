@@ -1,6 +1,6 @@
 /*
 Ricardo Villafañe
-Ejercicio 9
+Ejercicio 9 if
 */
 
 function mostrar() {

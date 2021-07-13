@@ -1,6 +1,6 @@
 /*
 Autor: Ricardo Villafañe
-Ejercicio 5
+Ejercicio 5 IF
 */
 
 function mostrar() {
