@@ -1,6 +1,6 @@
 /*
 Autor Ricardo Villafañe
-Ejercicio 6
+Ejercicio 6 If
 */
 
 function mostrar() {
