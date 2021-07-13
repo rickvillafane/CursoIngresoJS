@@ -1,6 +1,15 @@
-function mostrar()
-{
-	//tomo la edad  
-	alert("ok");
+/* 
+Autor: Ricardo Villafañe
+Ejercicio 1 IF
+*/
 
-}//FIN DE LA FUNCIÓN
+function mostrar() {
+	var edad;
+
+	edad = parseInt(document.getElementById("txtIdEdad").value);
+
+	if (edad == 15) {
+
+		alert("Niña Bonita");
+	}
+}

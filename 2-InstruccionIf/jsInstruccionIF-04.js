@@ -1,7 +1,15 @@
-function mostrar()
-{
-	//tomo la edad  
-	alert("ok");
+/*
+Autor: Ricardo Villafañe
+Ejercicio 4 IF
+*/
 
+function mostrar() {
+	var edad;
 
-}//FIN DE LA FUNCIÓN
+	edad = parseInt(document.getElementById("txtIdEdad").value);
+
+	if (edad <= 17 && edad >= 13) {
+		
+		alert("Usted es Adolescente");
+	}
+}
