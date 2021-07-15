@@ -17,12 +17,22 @@ TP N4 SWITCH CANTIDAD IF MARCAS
 /*
 function CalcularPrecio() {
 
-    var precioLamparas, marcaLampara, cantidadLamparas, precioFinal, precioDescuento, porcentajeDescuento, precioBruto, impuesto;
+    var precioLamparas; 
+    var marcaLampara; 
+    var cantidadLamparas; 
+    var precioFinal; 
+    var precioDescuento; 
+    var porcentajeDescuento; 
+    var precioBruto; 
+    var impuesto;
+    var descuento;
 
     precioLamparas = 35;
     cantidadLamparas = parseInt(document.getElementById("txtIdCantidad").value);
     marcaLampara = document.getElementById("Marca").value;
     precioBruto = cantidadLamparas * precioLamparas;
+    porcentajeDescuento=0;
+    descuento=0;
 
     switch (cantidadLamparas) {
         case 5:
@@ -53,16 +63,17 @@ function CalcularPrecio() {
             }
             break;
         case 2:
-            porcentajeDescuento = 100
+            porcentajeDescuento = 0;
             break;
         case 1:
-            porcentajeDescuento = 100
+            porcentajeDescuento = 0;
             break;
         default:
             porcentajeDescuento = 50;
             break;
     }
-    precioDescuento = (precioBruto*porcentajeDescuento) / 100
+    descuento=(precioBruto*porcentajeDescuento)/100;
+    precioDescuento=precioBruto-descuento;
     impuesto = precioDescuento * 0.1;
 
     if (precioDescuento > 120) {
@@ -74,18 +85,28 @@ function CalcularPrecio() {
         document.getElementById("txtIdprecioDescuento").value = precioDescuento;
     }
 }
-*/
 
+*/
 /*
 function CalcularPrecio() {
 
-    var precioLamparas, marcaLampara, cantidadLamparas, precioFinal, precioDescuento, porcentajeDescuento, precioBruto, impuesto;
+    var precioLamparas; 
+    var marcaLamparas; 
+    var cantidadLamparas; 
+    var precioFinal; 
+    var precioDescuento; 
+    var porcentajeDescuento; 
+    var precioBruto; 
+    var impuesto;
+    var descuento;
 
     precioLamparas = 35;
     cantidadLamparas = parseInt(document.getElementById("txtIdCantidad").value);
     marcaLampara = document.getElementById("Marca").value;
     precioBruto = cantidadLamparas * precioLamparas;
-
+    porcentajeDescuento=0;
+    descuento=0;
+    
     if (cantidadLamparas >= 6) {
         porcentajeDescuento = 50;
     }
@@ -126,9 +147,10 @@ function CalcularPrecio() {
         }
     }
     else if (cantidadLamparas < 3) {
-        porcentajeDescuento = 100;
+        porcentajeDescuento = 0;
     }
-    precioDescuento = (precioBruto * porcentajeDescuento) / 100
+    descuento=(precioBruto*porcentajeDescuento)/100;
+    precioDescuento=precioBruto-descuento;
     impuesto = precioDescuento * 0.1;
 
     if (precioDescuento > 120) {
@@ -140,17 +162,27 @@ function CalcularPrecio() {
         document.getElementById("txtIdprecioDescuento").value = precioDescuento;
     }
 }
+
 */
-
-
+/*
 function CalcularPrecio() {
 
-    var precioLamparas, marcaLamparas, cantidadLamparas, precioFinal, precioDescuento, porcentajeDescuento, precioBruto, impuesto;
+    var precioLamparas; 
+    var marcaLamparas; 
+    var cantidadLamparas; 
+    var precioFinal; 
+    var precioDescuento; 
+    var porcentajeDescuento; 
+    var precioBruto; 
+    var impuesto;
+    var descuento;
 
     precioLamparas = 35;
     cantidadLamparas = parseInt(document.getElementById("txtIdCantidad").value);
     marcaLampara = document.getElementById("Marca").value;
     precioBruto = cantidadLamparas * precioLamparas;
+    porcentajeDescuento=0;
+    descuento=0;
 
     switch (cantidadLamparas) {
         case 5:
@@ -190,16 +222,17 @@ function CalcularPrecio() {
             }
             break;
         case 2:
-            porcentajeDescuento = 100;
+            porcentajeDescuento = 0;
             break;
         case 1:
-            porcentajeDescuento = 100;
+            porcentajeDescuento = 0;
             break;
         default:
             porcentajeDescuento = 50;
             break;
     }
-    precioDescuento = (precioBruto * porcentajeDescuento) / 100
+    descuento=(precioBruto*porcentajeDescuento)/100;
+    precioDescuento=precioBruto-descuento;
     impuesto = precioDescuento * 0.1;
 
     if (precioDescuento > 120) {
@@ -211,20 +244,28 @@ function CalcularPrecio() {
         document.getElementById("txtIdprecioDescuento").value = precioDescuento;
     }
 }
+*/
 
 
 
-
-/*
 function CalcularPrecio() {
 
-    var precioLamparas, marcaLampara, cantidadLamparas, precioFinal, precioDescuento, porcentajeDescuento, precioBruto, impuesto;
+    var precioLamparas; 
+    var marcaLamparas; 
+    var cantidadLamparas; 
+    var precioFinal; 
+    var precioDescuento; 
+    var porcentajeDescuento; 
+    var precioBruto; 
+    var impuesto;
+    var descuento;
 
     precioLamparas = 35;
     cantidadLamparas = parseInt(document.getElementById("txtIdCantidad").value);
     marcaLampara = document.getElementById("Marca").value;
     precioBruto = cantidadLamparas * precioLamparas;
-
+    porcentajeDescuento=0;
+    descuento=0;
 
     if (cantidadLamparas >= 6) {
         porcentajeDescuento = 50;
@@ -257,22 +298,22 @@ function CalcularPrecio() {
         }
     }
     else if (cantidadLamparas<3){
-        porcentajeDescuento = 100;
+        porcentajeDescuento = 0;
     }
-    precioDescuento = (precioBruto*porcentajeDescuento) / 100
+    descuento=(precioBruto*porcentajeDescuento)/100;
+    precioDescuento=precioBruto-descuento;
     impuesto = precioDescuento * 0.1;
 
     if (precioDescuento > 120) {
         precioFinal = precioDescuento + impuesto;
         document.getElementById("txtIdprecioDescuento").value = precioFinal;
-        alert("Usted pagó " + impuesto + " de IIBB");
+        alert("Usted pagó $" + impuesto + " de IIBB");
     }
     else {
         document.getElementById("txtIdprecioDescuento").value = precioDescuento;
     }
 }
 
-*/
 
 
 
