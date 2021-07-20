@@ -40,7 +40,7 @@ function mostrar() {
             alert("Es de Tarde");
             break;
         default:
-            if (hora > 24) {
+            if (hora > 24 || hora < 1) {
                 alert("No es una hora válida");
             }
             else {
