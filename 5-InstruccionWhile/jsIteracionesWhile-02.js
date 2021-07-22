@@ -1,10 +1,19 @@
 /*
-al presionar el botón mostrar 10 repeticiones 
-con números DESCENDENTES, desde el 10 al 1.*/
-function mostrar()
-{
-	var contador;
-	contador=0; 
-	alert('iteración while');
+AUTOR RICARDO VILLAFAÑE
+WHILE 2
+*/
+
+function mostrar() {
+	
+	var numero;
+	numero = 10;
+
+	while (numero > 0) {
+		
+		document.write(numero + "<br>");
+		numero = numero - 1;
+	}
+
+
 
 }//FIN DE LA FUNCIÓN
